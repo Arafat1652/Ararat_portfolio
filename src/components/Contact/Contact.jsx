@@ -27,10 +27,10 @@ const Contact = () => {
       
     emailjs
       .sendForm(
-        "service_niilndo",
-        "template_6z5idye",
+        "service_050j371",
+        "template_h36wver",
         form.current,
-        "VOBt6Akm1LhI5CZG-"
+        "EjLrwnUixT4K52DDS"
       )
       .then(
         (result) => {
@@ -51,6 +51,8 @@ const Contact = () => {
             <Col md={6} className="c-left" >
             <h1 >Get in Touch</h1>
             <h1 className="yellow">Contact me</h1>
+            <h4><span className='yellow'>Phone </span>: 01933646124</h4>
+            <h4><span className='yellow'>Email </span>: arafathosen4042@gmail.com</h4>
             </Col>
             <Col md={6} className="c-right">
                 <form ref={form} onSubmit={sendEmail}>

@@ -4,14 +4,14 @@ import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 
 import Particle from '../components/Particle'
-import pdf from "../assets/sajib.pdf"
+import pdf from "../assets/arafat.pdf"
 
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/sajib.pdf`
+const resumeLink = `https://raw.githubusercontent.com/Arafat1652/Ararat_portfolio/main/src/assets/arafat.pdf`
 
 
 const Resume = () => {
@@ -44,17 +44,6 @@ const Resume = () => {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download Resume
-          </Button>
-        </Row>
       </Container>
     </div>
   )

@@ -15,24 +15,31 @@ const Toolstack = () => {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
+        <h4>VS Code</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <CgFigma />
+      <h4>Figma</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
+        <h4>Vercel</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNetlify />
+        <h4>Netlify</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
+        <h4>Postman</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <SiAdobephotoshop />
+      <h4>Photoshop</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <SiAdobeillustrator />
+      <h4>Illustrator</h4>
       </Col>
     </Row>
   );

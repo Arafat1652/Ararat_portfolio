@@ -5,6 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 const ProjectCard = (props) => {
+  console.log(props)
   return (
     <Card
       className="project-card-view"
@@ -38,7 +39,8 @@ const ProjectCard = (props) => {
         <Card.Text style={{ textAlign: "justify",fontSize:"15px" }}>
           {props.description}
         </Card.Text>
-        <Button
+        {/* for github client */}
+        {props.ghClient && <Button
           variant="primary"
           href={props.ghClient}
           target="_blank"
@@ -53,12 +55,13 @@ const ProjectCard = (props) => {
           }}
         >
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub Client"}
-        </Button>
+          GitHub Client
+        </Button>}
+        
         {"\n"}
         {"\n"}
-
-        <Button
+        {/* for github server */}
+        {props.ghServer && <Button
           variant="primary"
           href={props.ghServer}
           target="_blank"
@@ -73,10 +76,29 @@ const ProjectCard = (props) => {
           }}
         >
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub Server"}
-        </Button>
+          GitHub Server
+        </Button>}
+        
         {"\n"}
         {"\n"}
+        {/* for only github */}
+        {props.githubLink && <Button
+          variant="primary"
+          href={props.githubLink}
+          target="_blank"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "flex-end",
+            textAlign: "center",
+            position: "relative",
+            marginTop: "10px",
+          }}
+        >
+          <BsGithub /> &nbsp;
+          GitHub Link
+        </Button>}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 

@@ -22,33 +22,43 @@ const Techstack = () => {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
+        <h4>ReactJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <SiNextdotjs />
+      <h4>NextJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+        <h4>Javascript</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+        <h4>NodeJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiExpress />
+        <h4>ExpressJS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMongodb />
+        <h4>MongoDB</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiHtml5 />
+        <h4>HTML</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaCss3Alt />
+        <h4>CSS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
+        <h4>TailwindCSS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaBootstrap />
+        <h4>Bootstrap</h4>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
@@ -61,18 +71,23 @@ const Techstack = () => {
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
+        <h4>Git</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaGithub />
+        <h4>Github</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <ImNpm />
+        <h4>NPM</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <BiLogoFirebase />
+        <h4>Firebase</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <SiJsonwebtokens />
+      <h4>JWT</h4>
       </Col>
     </Row>
   );
